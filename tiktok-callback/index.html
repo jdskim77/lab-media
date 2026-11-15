@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Swell Season Lab · TikTok connected</title>
+<style>body{font:18px/1.6 -apple-system,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;background:#FBF7F1;color:#0E1B26}
+code{display:block;word-break:break-all;background:#12313A;color:#9FD3A8;padding:14px;border-radius:6px;font-size:15px}
+button{font-size:18px;padding:12px 18px;border:0;border-radius:6px;background:#114E66;color:#fff;margin-top:12px}</style></head>
+<body><h1>Almost done</h1><p id="msg">Copy the link below and paste it in Discord (the 🧪 A/B lab thread). It's a one-time code that only works with our server's private key and expires in a few minutes.</p>
+<code id="v"></code><button onclick="navigator.clipboard.writeText(location.href);this.textContent='Copied ✓'">Copy link</button>
+<script>var p=new URLSearchParams(location.search);document.getElementById('v').textContent=location.href;
+if(p.get('error')){document.getElementById('msg').textContent='TikTok said: '+(p.get('error_description')||p.get('error'))+'. Paste this in Discord anyway so Hermes can see what went wrong.'}
+if(!p.get('code')&&!p.get('error')){document.getElementById('msg').textContent='No code here yet. Open the authorize link Hermes sent you.'}</script></body></html>
